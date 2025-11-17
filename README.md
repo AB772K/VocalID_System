@@ -1,3 +1,5 @@
-Intelligent Voice Authentication System with Spoof & Liveness Detection
+🛡️ Advanced Voice Authentication System
+with Anti-Spoofing & Liveness Verification
 
-Made By Abdul Basit (FA22-BCS-056) and Farrukh Zia (FA22-BCS-157)
+By Abdul Basit (FA22-BCS-056)
+& Farrukh Zia (FA22-BCS-157)
