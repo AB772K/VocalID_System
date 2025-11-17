@@ -1,5 +1,4 @@
-🛡️ Advanced Voice Authentication System
-with Anti-Spoofing & Liveness Verification
+🔐 VocalID: Intelligent Voice Authentication System
+Featuring Spoofing Prevention & Liveness Detection
 
-By Abdul Basit (FA22-BCS-056)
-& Farrukh Zia (FA22-BCS-157)
+Developed by Abdul Basit (FA22-BCS-056) & Farrukh Zia (FA22-BCS-157)
