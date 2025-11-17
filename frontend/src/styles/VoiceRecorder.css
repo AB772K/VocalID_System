@@ -1,0 +1,323 @@
+.voice-recorder {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.recorder-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.recorder-header h3 {
+  color: #2d3748;
+  margin-bottom: 5px;
+}
+
+.recorder-header p {
+  color: #718096;
+  font-size: 14px;
+}
+
+/* Recording Instructions */
+.recording-instructions {
+  margin-bottom: 25px;
+}
+
+.instruction-card {
+  background: #f0fff4;
+  border: 1px solid #9ae6b4;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.instruction-card h4 {
+  color: #22543d;
+  margin-bottom: 10px;
+}
+
+.instruction-card ul {
+  color: #2d3748;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.instruction-card li {
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+
+
+.recording-timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #fff5f5;
+  border: 1px solid #fed7d7;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 15px;
+  color: #c53030;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.recording-timer.warning {
+  background: #fffaf0;
+  border-color: #fbd38d;
+  color: #dd6b20;
+  animation: pulse-warning 1s infinite;
+}
+
+.time-warning {
+  color: #dd6b20;
+  font-weight: normal;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.time-complete {
+  color: #38a169;
+  font-weight: normal;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.recording-timer.completed {
+  background: #f0fff4;
+  border-color: #9ae6b4;
+  color: #22543d;
+}
+
+/* Stop Early Button */
+.record-btn.stop-early {
+  background: #ed8936;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+}
+
+.record-btn.stop-early:hover {
+  background: #dd6b20;
+  transform: translateY(-2px);
+}
+
+/* Remove the old stop button styles */
+.record-btn.stop {
+  display: none;
+}
+
+@keyframes pulse-warning {
+  0% {
+    box-shadow: 0 0 0 0 rgba(251, 211, 141, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(251, 211, 141, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(251, 211, 141, 0);
+  }
+}
+
+.time-tip {
+  color: #e53e3e;
+  font-weight: normal;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+/* Recorder Controls */
+.recorder-controls {
+  margin-bottom: 15px;
+}
+
+.record-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+}
+
+.record-btn.start {
+  background: #e53e3e;
+  color: white;
+}
+
+.record-btn.start:hover {
+  background: #c53030;
+  transform: translateY(-2px);
+}
+
+.record-btn.stop {
+  background: #2d3748;
+  color: white;
+}
+
+.record-btn.stop:hover {
+  background: #1a202c;
+}
+
+/* Playback Controls */
+.playback-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.playback-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #718096;
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+.recording-quality {
+  font-weight: 600;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background: #e6fffa;
+  color: #234e52;
+}
+
+.playback-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.control-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.control-btn.play {
+  background: #38a169;
+  color: white;
+}
+
+.control-btn.play:hover {
+  background: #2f855a;
+}
+
+.control-btn.upload {
+  background: #3182ce;
+  color: white;
+}
+
+.control-btn.upload:hover:not(:disabled) {
+  background: #2c5aa0;
+}
+
+.control-btn.upload:disabled {
+  background: #a0aec0;
+  cursor: not-allowed;
+}
+
+.control-btn.delete {
+  background: #e53e3e;
+  color: white;
+}
+
+.control-btn.delete:hover {
+  background: #c53030;
+}
+
+/* Recording Indicator */
+.recording-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #e53e3e;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.pulse {
+  width: 12px;
+  height: 12px;
+  background: #e53e3e;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(229, 62, 62, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(229, 62, 62, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(229, 62, 62, 0);
+  }
+}
+
+/* Technical Info */
+.technical-info {
+  background: #ebf8ff;
+  border: 1px solid #bee3f8;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.technical-info h4 {
+  color: #2b6cb0;
+  margin-bottom: 8px;
+}
+
+.technical-info p {
+  color: #4a5568;
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .playback-info {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+  
+  .playback-buttons {
+    flex-direction: column;
+  }
+  
+  .control-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
